@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>Document</title>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .mySwiper2 {
+            width: 500px;
+            height: 500px;
+            margin: 20px auto;
+        }
+
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 96%;
+            margin: auto;
+        }
+
+        .top {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 30px;
+        }
+
+        nav ul {
+            width: max-content;
+            margin: auto;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 70px;
+        }
+
+        nav li a {
+            color: black;
+            text-decoration: none;
+            font-size: 26px;
+        }
+
+        main {
+
+            background-size: 100% 100%;
+        }
+
+        .ct1,
+        .ct2,
+        .ct3 {
+            width: 100%;
+            margin: 200px auto;
+            height: 685px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ct1 {
+            background: url(ss1.png) no-repeat;
+            background-position: left center;
+            background-size: 100% 100%;
+
+        }
+
+        .ct2 {
+            background: url(ss2.png) no-repeat;
+            background-position: right center;
+            background-size: 100% 100%;
+        }
+
+        .ct3 {
+            background: url(ss3.png) no-repeat;
+            background-position: left center;
+            background-size: 100% 100%;
+        }
+
+        .ct4 {
+            width: 1440px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 500px;
+        }
+
+        .ct4 .c4 {
+            width: 28%;
+        }
+
+        .ct4 .c4 img {
+            width: 100%;
+        }
+
+        .ct4-1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .ct5 {
+            background: url(m.jpg) no-repeat;
+            background-size: 100% 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c5-1 {
+            width: 500px;
+            margin: 50px auto;
+
+        }
+
+        .c5-2 {
+            width: 960px;
+            margin: 15px auto;
+
+        }
+
+        .ct6 {
+            background: url(f.jpg) no-repeat;
+            background-size: 100% 100%;
+            height: 830px;
+        }
+
+        footer img {
+            margin: 15px;
+        }
+
+        .c6-1 {
+            margin: 200px 10px;
+        }
+
+        .c6-2 {
+            margin: 0px 10px;
+
+        }
+
+        .c6-3 {
+            margin: 0px 10px;
+
+        }
+
+        .c6-4 {
+            text-align: right;
+            margin: 0px 10px;
+
+        }
+
+        .ct7 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+        }
+
+        @media(max-width:600px) {
+            .wrap {
+                width: 96%;
+                margin: auto;
+            }
+
+            header,
+            .ct4
+             {
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+
+            .logo {
+                text-align: center;
+                margin: 30px 0;
+            }
+
+            .logo img {
+                width: 35%;
+            }
+          
+
+            nav li {
+              
+                margin: 0 1rem;
+            }
+
+            nav li a {
+                font-size: 0.97rem
+            }
+
+            main {
+                margin-top: 10%;
+                height: 330px;
+            }
+
+            .ct1,
+            .ct2,
+            .ct3 {
+                flex-direction: column;
+                width: 96%;
+                margin: auto;
+                background: none;
+                margin: 15% auto;
+                height: auto;
+            }
+
+            .ct1 img,
+            .ct2 img,
+            .ct3 img {
+                width: 100%;
+                height: 400px;
+            }
+
+            .c1-2,
+            .c2-2,
+            .c3-2 {
+                display: none;
+            }
+
+            .ct4 {
+                width: 96%;
+                margin: auto;
+            }
+
+            .c4-1,
+            .c4-2,
+            .c4-3 {
+                width: 85%;
+                margin: auto;
+
+            }
+
+            .c4-1 img,
+            .c4-2 img,
+            .c4-3 img {
+                width: 100%;
+            }
+
+            footer {
+                font-size: 0.85rem;
+            }
+            .yt iframe{
+             width: 500px;
+             height: 300px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+           
+            }
+            .ct5 {
+                background: url(m.jpg) no-repeat;
+                flex-direction: column;                                                                   
+            }
+         
+            .ct6 {
+                background: url(f.jpg) no-repeat;
+                flex-direction: column;                                 
+            }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="wrap">
+        <div class="logo">
+            <img src="logo.png" width="180">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">BRAND</a></li>
+                <li><a href="#">PROGRAM</a></li>
+                <li><a href="#">INTERVIEW</a></li>
+                <li><a href="#">ITEM</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="main-1.png" width="880"></div>
+                <div class="swiper-slide"><img src="main-2.png" width="880"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    <section>
+        <div class="ct1">
+            <div class="c1-1"><img src="s1.png" height="685px"> </div>
+            <div class="c1-2"><img src="d1.png" height="685px"> </div>
+        </div>
+        <div class="ct2">
+            <div class="c2-1"><img src="s2.png" height="685px"> </div>
+            <div class="c2-2"><img src="d2.png" height="685px"> </div>
+        </div>
+        <div class="ct3">
+            <div class="c3-1"><img src="s3.png" height="685px"> </div>
+            <div class="c3-2"><img src="d3.png" height="685px"> </div>
+
+        </div>
+        <div class="ct4-1">
+            <img src="insta.png" height="78px">
+        </div>
+        <div class="ct4">
+            <div class="c4-1"><img src="i1.png" height="384px"> </div>
+            <div class="c4-2"><img src="i2.png" height="384px"> </div>
+            <div class="c4-3"><img src="i3.png" height="384px"> </div>
+        </div>
+        <div class="ct5">
+            <div class="c5-1">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="k1.png"></div>
+                        <div class="swiper-slide"><img src="k2.png"></div>
+                        <div class="swiper-slide"><img src="k3.png"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="c5-2">
+                <div class="yt">
+                    <iframe width="960" height="615" src="https://www.youtube.com/embed/TZsLmw-Xp_s?si=GuaDH3mqfIYRK-ZG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="ct6">
+            <img src="logo.png" width="180">
+            <h4 class="c6-1">더블유엘비컴퍼니 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표:이지연ADMIN<br><br>
+                주소:제주특별자치도 제주시 관덕로 15길23 (재)여성기업종합지원센터405호<br><br>
+                사업자등록번호:656-44-009919 &nbsp;&nbsp;&nbsp;&nbsp; 통신판매신고번호:제2023-제주이도1-0002호<br><br>
+                개인정보 관리 책임자:이지연</h4>
+            <div class="ct7">
+                <div class="ct8">
+                    <h4 class="c6-2">이용약관 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보처리방침 <br><br>
+                        자사는 통신판매중개자로서 중개하는 거래에 대하여 책임을 부담하지 않습니다.</h4> <br>
+                    <h4 class="c6-3">
+                        고객센터C/S<br>
+                        이메일:ilsangtrip@naver.com
+                    </h4>
+                </div>
+                <div class="ct9">
+                    <h4 class="c6-4">
+                        대표번호:010-8675-1423<br><br>
+                        채팅상담:카카오톡 채널 일상과 여행사이<br><br>
+                        업무시간:평일9:30~17:30 Break time:12:00~13:00<br>
+                        Copyright WLB컴퍼니
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            autoplay: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+
+
+</body>
+
+</html>
